@@ -1,4 +1,5 @@
 import Uno
+import Dos
 
 if __name__ == '__main__':
     objeto_punto1 = Uno.Matriz()
@@ -16,3 +17,15 @@ if __name__ == '__main__':
     print(objeto_punto1.compute(d))
     print(objeto_punto1.compute(e))
     print(objeto_punto1.compute(f))
+
+    objeto_punto2 = Dos.Expresion()
+
+    a = "Hello ! world"
+    b = "2 + 10 / 2 - 20"
+    c = "(2 + 10) / 2 - 20"
+    d = "(2 + 10 / 2 - 20"
+
+    print(objeto_punto2.compute(a))
+    print(objeto_punto2.compute(b))
+    print(objeto_punto2.compute(c))
+    print(objeto_punto2.compute(d))
